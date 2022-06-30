@@ -1,6 +1,6 @@
 class Animal {
     String name;
-    int age;
+    static int age;
 }
 public class VariableAndMethod {
 
@@ -15,7 +15,7 @@ public class VariableAndMethod {
 
         System.out.println(cat.name);   //코코 출력
         System.out.println(dog.name);	//덕구 출력
-        System.out.println(cat.age);	//2 출력
+        System.out.println(cat.age);	//7 출력
         System.out.println(dog.age);	//7 출력
 
     }
