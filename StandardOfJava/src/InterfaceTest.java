@@ -1,11 +1,15 @@
+interface I {
+    public abstract void methodP();
+}
+
 class User {
-    public void methodU(Provider p) {
-        p.methodP();
+    public void methodU(I i) {
+        i.methodP();
     }
 }
-class Provider {
+class Provider implements I{
     public void methodP() {
-        System.out.println("Provider의 메서드");
+        System.out.println("Provider 클래스의 메서드");
     }
 }
 
